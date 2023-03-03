@@ -19,7 +19,7 @@ public class UserController {
     }
 
     @GetMapping()
-    public String getUsers(Model model, @RequestParam(value = "count", required = false) Integer count) {
+    public String getUsers(Model model) {
         model.addAttribute("users", userService.getAllUsers());
         return "user";
     }

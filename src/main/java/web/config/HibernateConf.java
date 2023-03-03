@@ -60,4 +60,6 @@ public class HibernateConf {
     public EntityManager makeEntityManager(EntityManagerFactory entityManagerFactory) {
         return entityManagerFactory.createEntityManager();
     }
+
+
 }
