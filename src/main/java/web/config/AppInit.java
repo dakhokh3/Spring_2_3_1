@@ -12,7 +12,7 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8");
         characterEncodingFilter.setForceEncoding(true);
-        return new Filter[] {characterEncodingFilter};
+        return new Filter[]{characterEncodingFilter};
     }
 
     // Метод, указывающий на класс конфигурации
@@ -36,7 +36,6 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
-
 
 
 }
